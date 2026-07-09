@@ -1,0 +1,32 @@
+# 메타DB: Deployment(Pod 관리) + Service(고정 접속점)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meta-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: meta-db }
+  template:
+    metadata:
+      labels: { app: meta-db }
+    spec:
+      containers:
+        - name: mysql
+          image: mysql:8.0
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              value: metapass123
+            - name: MYSQL_DATABASE
+              value: dbops_meta
+          ports:
+            - containerPort: 3306
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: meta-db-svc     # Spring이 이 이름으로 접속
+spec:
+  selector: { app: meta-db }
+  ports:
+    - port: 3306
