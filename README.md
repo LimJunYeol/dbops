@@ -1,14 +1,13 @@
-# DBOps — 미니 매니지드 DB 플랫폼
+<img width="1680" height="1160" alt="68de8264-e26e-438b-b3de-544d0c1b4a00" src="https://github.com/user-attachments/assets/f0708033-0d26-4595-9c31-ad2e9cbe7928" /># DBOps — 미니 매니지드 DB 플랫폼
 
 여러 MySQL 인스턴스의 등록·상태 점검·계정/권한 관리·작업 이력을 하나의 REST API로 처리하는
 운영 플랫폼입니다. "사람이 없어도 틀리지 않는 시스템"을 목표로,
 DBMS 운영 업무를 표준화된 API와 자동화 체계로 옮기는 구조를 직접 구현했습니다.
 
-📘 **설계 판단 13가지와 트러블슈팅 기록**: [Notion 기술 문서](노션링크)
+📘 **설계 판단 13가지와 트러블슈팅 기록**: [Notion 기술 문서]([노션링크](https://app.notion.com/p/DBOps-DB-3923cf5231a980c1aa10c5c5b2db03ec?source=copy_link))
 
 ## 아키텍처
-
-![architecture](docs/01_architecture.png)
+<img width="1680" height="1160" alt="68de8264-e26e-438b-b3de-544d0c1b4a00" src="https://github.com/user-attachments/assets/274c85e3-9d5f-4eed-8436-607c51b0ff4e" />
 
 | 기술 | 역할 | 깊이 |
 |---|---|---|
