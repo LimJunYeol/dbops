@@ -1,0 +1,19 @@
+api_base: http://localhost:8080
+interval_sec: 60
+
+targets:
+  - instance_id: 1
+    host: localhost
+    port: 3307
+    user: root
+    password: target1pass
+  - instance_id: 2
+    host: localhost
+    port: 3308
+    user: root
+    password: target2pass
+  - instance_id: 3
+    host: localhost
+    port: 3309
+    user: root
+    password: target3pass
