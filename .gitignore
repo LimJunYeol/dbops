@@ -1,0 +1,24 @@
+# Build
+build/
+.gradle/
+out/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Node (Vue 콘솔)
+console/node_modules/
+console/dist/
+
+# Python
+agent/venv/
+__pycache__/
+
+# Go
+healthcheck-cli/dbops-check.exe
+
+# OS
+.DS_Store
+Thumbs.db
